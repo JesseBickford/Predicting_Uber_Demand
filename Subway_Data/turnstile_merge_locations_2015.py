@@ -2,7 +2,7 @@ import pandas as pd
 import re
 
 # Read in our csv and convert the date_time columns
-hourly_2015 = pd.read_csv('2015_hourly_combined.csv')
+hourly_2015 = pd.read_csv('./2015_hourly_combined.csv')
 hourly_2015.date_time = pd.to_datetime(hourly_2015.date_time,errors='coerce')
 
 # Sort our rows so that each individual SCP (for a Unit in a Control Area) is
@@ -27,7 +27,7 @@ hourly_2015['station_line'] = hourly_2015['station'] + ' ' + hourly_2015['linena
 station_entries = pd.DataFrame({'entries':hourly_2015.groupby(by=['station_line','date_time']).entry_diff.sum()}).reset_index()
 
 # Read in the csv which has station names and their latitude/longitude
-stations = pd.read_csv('/Users/Brian/stations_nyc_matched2.csv')
+stations = pd.read_csv('./subway_stations_nyc_matched.csv')
 # Drop the column created by editing the csv
 stations.drop('Unnamed: 4',axis=1,inplace=True)
 
