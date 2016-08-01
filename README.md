@@ -3,7 +3,7 @@ This project aims to predict demand for Uber in a New York City neighborhood at 
 
 ###Data Sets
 - Uber data from [538’s GitHub repository](https://github.com/fivethirtyeight/uber-tlc-foil-response) which consists of 18.8 million rides in 2014 and 2015.
-- Weather data using the [weathersource.com api](https://developer.weathersource.com). Some featues we used are temperature, rain, and humidity.
+- Weather data using the [weathersource.com api](https://developer.weathersource.com). Some features we used are temperature, rain, and humidity.
 - Census data from the [2013 American Community Survey](http://maps.nyc.gov/census/). We mined data for both the neighborhood and census track level. Some features we used are distributions of income, age, gender, and number of cars available to each household.
 - Subway Turnstile data from the [MTA's website](http://web.mta.info/developers/turnstile.html). There is a relationship between demand for public transportation and demand for Uber, so we wanted to bring in Subway data which can improve our model. This data set consist of the cumulative number of entries and exits reported by each individual turnstile every 4 hours.
 
