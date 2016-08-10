@@ -1,5 +1,5 @@
 # Predicting Uber Demand
-This project aims to predict demand for Uber in a New York City neighborhood at a given hour relative to all other neighborhoods. Surge pricing is a reactive solution to a market inefficiency resulting from a mismatch between supply and demand. We want to find a proactive solution and model the relative demand level for each neighborhood in NYC so we can distribute Uber’s fleet in the optimal way. 
+This project aims to predict demand for Uber in a New York City neighborhood at a given hour relative to all other neighborhoods. Surge pricing is a reactive solution to a market inefficiency resulting from a mismatch between supply and demand. We want to find a proactive solution and model of the relative demand level for each neighborhood in NYC so we can distribute Uber’s fleet in the optimal way. 
 
 ###Data Sets
 - Uber data from [538’s GitHub repository](https://github.com/fivethirtyeight/uber-tlc-foil-response) which consists of 18.8 million rides in 2014 and 2015.
